@@ -17,7 +17,7 @@ let exerciseType = undefined;
 let exerciseStep = 0; 
 
 // Used to handle conversation
-function conversationHandler(state) {
+conversationHandler = (state) => {
   let responseData = conversationStore[state];
   if (responseData.type === 'text'){
     /*
@@ -125,3 +125,5 @@ function resetExerciseStep () {
 function incrementExerciseStep () {
   exerciseStep ++;
 }
+
+export default index;
