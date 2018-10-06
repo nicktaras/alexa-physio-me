@@ -4,13 +4,15 @@ const routineStore = {
   LIGHT: [
     'INTRO_LIGHT',
     'DOUBLE_HEAL_LIFTS_INIT', 
-    'DOUBLE_HEAL_LIFTS_START',
+    'DOUBLE_HEAL_LIFTS',
+    'SINGLE_HEAL_LIFTS_INIT',
     'SINGLE_HEAL_LIFTS',
-    'DOUBLE_BOTTOM_LIFTS',
+    'BOTTOM_LIFTS_INIT',
+    'BOTTOM_LIFTS',
     'END'
   ],
   MEDIUM: [],
   HARD: []
 };
 
-export default routineStore;
+module.exports = routineStore;
