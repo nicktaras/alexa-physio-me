@@ -15,7 +15,7 @@ Notes will be updated soon to provide steps of how to install this demo.
 ## Future development ideas:
 - Google Calendar to add routine dates
 - Facebook profile login
-- More routines, with more carefully crafted language and timings
+- More routines with carefully crafted language and timings
 
 ## Dev notes / resources / references / APIs:
 https://jestjs.io/
