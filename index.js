@@ -4,32 +4,18 @@ const Alexa = require('alexa-sdk');
 const APP_ID = undefined;
 
 // App model data:
-// Conversation to drive application
-const conversationStore = require('conversationStore');
 // Exercise steps
 const exerciseStore = require('exerciseStore');
 // Collections of exercises that make up a routine
 const routinesStore = require('routineStore');
 
+// methods
+const conversationHandler = require('conversationHandler');
+
 // such as LIGHT, MEDIUM
 let exerciseType = undefined; 
 // current routine step index
 let exerciseStep = 0; 
-
-// Used to handle conversation
-conversationHandler = (state) => {
-  let responseData = conversationStore[state];
-  if (responseData.type === 'text'){
-    /*
-      returns:
-      { 
-        responseType: (string),
-        text: (string) 
-      }
-    */
-    return responseData.config;
-  }
-}
 
 // Returns the current exercise State e.g. 'HEAL_LIFT_INIT'
 function getExerciseState() {

@@ -1,5 +1,7 @@
+const conversationStore = require('conversationStore');
+
 // Used to handle conversation
-conversationHandler = (state, conversationStore) => {
+conversationHandler = (state) => {
   let responseData = conversationStore[state];
   if (responseData.type === 'text'){
     /*
